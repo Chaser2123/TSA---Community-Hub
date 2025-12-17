@@ -1,12 +1,5 @@
-import { Google_Sans_Code } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header.jsx";
-
-const googleSans = Google_Sans_Code({
-  variable: "--font-google-sans-code",
-  subsets: ["latin"],
-});
-
 
 export const metadata = {
   title: "Saratoga-Springs Hub",
@@ -16,9 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${googleSans.variable} antialiased`}
-      >
+      <body>
         <Header />
         {children}
       </body>
